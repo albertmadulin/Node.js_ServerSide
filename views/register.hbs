@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset ="UTF-8">
+<meta name ="viewport" content = "width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="/style.css">
+<title>document</title>
+</head>
+
+
+
+<body>
+
+           
+        
+      
+
+   <div class="login-box">
+
+        <a href = "/register" ><h1>Register</h1></p>
+            <a href = "/login" ><h1>Login</h1> </a> 
+     
+
+       
+
+                <form action = "/auth/register" method= "POST">
+
+                  <div class= "user-box">
+                     <input type="text" class="user-box" id="name" name = "name"  required="">
+                     <label for="name" required="">First Name</label>
+                    </div>
+
+                    <div class= "user-box">
+                                <input type="text" class="user-box" id="lastname" name = "lastname" required="" >
+                                <label for="name" >Last Name</label>
+                    </div>
+
+                <div class= "user-box">
+                                <input type="text" class="user-box" id="idnumber" name = "idnumber" required="" >
+                                <label for="name" >Id Number</label>
+                    </div>
+
+                    <div class= "user-box">
+                                <input type="text" class="user-box" id="address" name = "address" required="" >
+                                <label for="name" >Address</label>
+                    </div>
+
+                       <div class= "user-box">
+                                <input type="text" class="user-box" id="username" name = "username" required="" >
+                                <label for="username" >Username</label>
+                       </div>
+
+                       <div class= "user-box">
+                                <input type="password" class="user-box"  id="password" name = "password" required="" >
+                                <label for="name" >Password</label>
+                         </div>
+ <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+     
+    
+<button type= "submit" class="glow-on-hover" type="button"> <h1>Register user </h1></button>
+                    
+  </a>
+  </form>
+ 
+                
+              
+
+</div>    
+         {{#if message}}
+         <h4 class = "alert alert-danger mt-4" >hdadhd{{message}}</h4>
+  
+        {{/if}}
+        
+</body>
+</html>
